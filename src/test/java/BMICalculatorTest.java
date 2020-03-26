@@ -19,7 +19,7 @@ class BMICalculatorTest
     @BeforeAll
     static void beforeAll()
      {
-         System.out.println("Before all unit tests");
+         System.out.println("Before alle unit tests");
      }
 
      @AfterAll
