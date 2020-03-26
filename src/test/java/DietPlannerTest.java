@@ -19,7 +19,7 @@ class DietPlannerTest
     @AfterEach
     void afterEach()
     {
-        System.out.println("EEEEEE");
+        System.out.println("2222 ");
     }
 
     @Test
