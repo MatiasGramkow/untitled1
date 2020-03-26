@@ -19,7 +19,7 @@ class DietPlannerTest
     @AfterEach
     void afterEach()
     {
-        System.out.println("A unit test was finished");
+        System.out.println("EEEEEE");
     }
 
     @Test
