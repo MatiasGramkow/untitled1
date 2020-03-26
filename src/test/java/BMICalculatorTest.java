@@ -58,6 +58,20 @@ class BMICalculatorTest
              assertTrue(recommended);
          }
 
+         @Test
+         void shouldReturnTrueWhenDietRecommendedv3()
+         {
+             // given
+             double weight = 84.0;
+             double height = 1.72;
+
+             // when
+             boolean recommended = BMICalculator.isDietRecommended(weight,height);
+
+             // then
+             assertTrue(recommended);
+         }
+
          @ParameterizedTest
          @ValueSource(doubles = {89.0, 95.0, 110.0})
          void shouldReturnTrueWhenDietRecommendedV2(Double coderWeight)
