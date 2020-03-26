@@ -1,8 +1,4 @@
-
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.RepeatedTest;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -19,7 +15,7 @@ class DietPlannerTest
     @AfterEach
     void afterEach()
     {
-        System.out.println("aaaaa");
+        System.out.println("Test running");
     }
 
     @Test
@@ -34,10 +30,10 @@ class DietPlannerTest
 
         // then
         assertAll(
-                () -> assertEquals(expected.getCalories(), actual.getCalories()),
-                () -> assertEquals(expected.getProtein(), actual.getProtein()),
-                () -> assertEquals(expected.getFat(), actual.getFat()),
-                () -> assertEquals(expected.getCarbohydrate(), actual.getCarbohydrate())
+                () -> Assertions.assertEquals(expected.getCalories(), actual.getCalories()),
+                () -> Assertions.assertEquals(expected.getProtein(), actual.getProtein()),
+                () -> Assertions.assertEquals(expected.getFat(), actual.getFat()),
+                () -> Assertions.assertEquals(expected.getCarbohydrate(), actual.getCarbohydrate())
         );
     }
 
@@ -53,10 +49,10 @@ class DietPlannerTest
 
         // then
         assertAll(
-                () -> assertEquals(expected.getCalories(), actual.getCalories()),
-                () -> assertEquals(expected.getProtein(), actual.getProtein()),
-                () -> assertEquals(expected.getFat(), actual.getFat()),
-                () -> assertEquals(expected.getCarbohydrate(), actual.getCarbohydrate())
+                () -> Assertions.assertEquals(expected.getCalories(), actual.getCalories()),
+                () -> Assertions.assertEquals(expected.getProtein(), actual.getProtein()),
+                () -> Assertions.assertEquals(expected.getFat(), actual.getFat()),
+                () -> Assertions.assertEquals(expected.getCarbohydrate(), actual.getCarbohydrate())
         );
     }
 }

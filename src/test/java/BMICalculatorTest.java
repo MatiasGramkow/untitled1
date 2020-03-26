@@ -35,7 +35,7 @@ class BMICalculatorTest
          void shouldReturnTrueWhenDietRecommended()
          {
              // given
-             double weight = 3.0;
+             double weight = 1.0;
              double height = 1.72;
 
              // when
@@ -107,7 +107,7 @@ class BMICalculatorTest
          void shouldThrowArithmeticExceptionWhenHeightZero()
          {
              // given
-             double weight = 83.0;
+             double weight = 1.0;
              double height = 0.0;
 
              // when
@@ -135,8 +135,8 @@ class BMICalculatorTest
 
              // then
              assertAll(
-                     () -> assertEquals(1.82, coderWorstBMI.getHeight()),
-                     () -> assertEquals(98.0, coderWorstBMI.getWeight())
+                     () -> Assertions.assertEquals(1.82, coderWorstBMI.getHeight()),
+                     () -> Assertions.assertEquals(98.0, coderWorstBMI.getWeight())
              );
          }
 
