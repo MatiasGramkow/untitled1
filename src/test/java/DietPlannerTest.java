@@ -19,7 +19,7 @@ class DietPlannerTest
     @AfterEach
     void afterEach()
     {
-        System.out.println("aaass");
+        System.out.println("Test Updated");
     }
 
     @Test
