@@ -107,7 +107,7 @@ class BMICalculatorTest
          void shouldThrowArithmeticExceptionWhenHeightZero()
          {
              // given
-             double weight = 50.0;
+             double weight = 83.0;
              double height = 0.0;
 
              // when
