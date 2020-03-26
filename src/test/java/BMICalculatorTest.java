@@ -35,7 +35,20 @@ class BMICalculatorTest
          void shouldReturnTrueWhenDietRecommended()
          {
              // given
-             double weight = 1.0;
+             double weight = 83.0;
+             double height = 1.72;
+
+             // when
+             boolean recommended = BMICalculator.isDietRecommended(weight,height);
+
+             // then
+             assertTrue(recommended);
+         }
+         @Test
+         void shouldReturnTrueWhenDietRecommendedv2()
+         {
+             // given
+             double weight = 84.0;
              double height = 1.72;
 
              // when
