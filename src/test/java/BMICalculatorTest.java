@@ -35,7 +35,7 @@ class BMICalculatorTest
          void shouldReturnTrueWhenDietRecommended()
          {
              // given
-             double weight = 2.0;
+             double weight = 3.0;
              double height = 1.72;
 
              // when
